@@ -1,11 +1,16 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% This template is created by Zhou Feng on 2/21/2019 for the undergraduate thesis
-%opening speech at Huazhong University of Science and Technlogy
-
-%----------------------------------------------------------------------------------------
-%	PACKAGES AND THEMES
-%----------------------------------------------------------------------------------------
-
+% HUSTthesis.tex @ https://github.com/zfengg/HUSTtex/tree/master/HUSTopening
+%
+% 	A simple tex for the opening task of the undergraduate thesis at HUST.
+%
+% author: Zhou Feng @ 2019
+%
+% requirements:
+%	TeX environments: Texlive/MacTeX or MiKTeX
+%	compiler: XeLaTeX
+%
+% ---------------------------------------------------------------------------- %
+%                                   preamble                                   %
+% ---------------------------------------------------------------------------- %
 \documentclass{beamer}
 
 %----------------------------------------------------------------%
@@ -20,18 +25,16 @@
 \usepackage{ctex}% If you are lazy, the CTEX suit is enough.
 % Chinese Font
 \usepackage{xeCJK}% For the Chinese through XeLaTex
-\setCJKmainfont{FandolSong} 	% set the mainfont of Chinese as songti. (serif) for  
-\setCJKsansfont{FandolSong}	% sans serif font for \textsf
-\setCJKmonofont{FandolSong}	% monospace font for \texttt
-% \punctstyle{kaiming}  	% Remove the space used by symbols like comma. Special for the mainland students like us HUSTers.
-\setCJKfamilyfont{song}{FandolSong}                  %宋体 song
-\newcommand{\song}{\CJKfamily{song}}                      
-\setCJKfamilyfont{kai}{FandolKai}                         %楷体  kai
+\setCJKmainfont{SimSun} % set the mainfont of Chinese as songti. (serif) for  
+\setCJKsansfont{SimSun} % sans serif font for \textsf
+\setCJKmonofont{SimSun} % monospace font for \texttt
+% \punctstyle{kaiming}   % Remove the space used by symbols like comma. Special for the mainland students like us HUSTers.
+\setCJKfamilyfont{song}{SimSun}                             %宋体 song
+\newcommand{\song}{\CJKfamily{song}}                        
+\setCJKfamilyfont{kai}{KaiTi}                        		%楷体2312  kai
 \newcommand{\kai}{\CJKfamily{kai}}  
-\setCJKfamilyfont{hwzs}{FandolFang}                 %华文中宋  hwzs
+\setCJKfamilyfont{hwzs}{STZhongsong}                        %华文中宋  hwzs
 \newcommand{\hwzs}{\CJKfamily{hwzs}}
-\setCJKfamilyfont{hei}{FandolHei}                      %黑体  hei
-\newcommand{\hei}{\CJKfamily{hei}}
 % English Font
 \usepackage{fontspec}% Then you can use the fonts installed at your device. 
 \setmainfont{Times New Roman}
@@ -197,7 +200,7 @@
 
 
 %----------------------------------------------------------------%
-%Something to improve my work efficiency.
+% to improve work efficiency.
 \newcommand{\comma}{\text{，}}
 \newcommand{\juhao}{\text{。}}
 \newcommand{\fenhao}{\text{；}}
@@ -205,7 +208,7 @@
 \newcommand{\xysolution}[2]{$ x=#1\comma y=#2 $}
 \newcommand{\conalpha}{$ \alpha=\left[a_{1},a_{2},a_{3},\ldots\right] $}
 \newcommand{\parquo}[1]{$ p_{#1}/q_{#1}=\left[a_{1},\ldots,a_{#1-1}\right] $}
-\newcommand{\qfield}[1]{$ \mathbf{Q}\left(\sqrt{#1}\right) $}%二次域每次输入太麻烦了，
+\newcommand{\qfield}[1]{$ \mathbf{Q}\left(\sqrt{#1}\right) $}
 \newcommand{\pelleq}[2]{ $ x^{2}-#1y^{2}=#2 $} % Pell方程
 \newcommand{\mymod}[3]{$ #1\equiv#2\left(\!\!\mod#3\right) $}
 \newcommand{\periodrep}[3]{$ \sqrt{#1}=\left[#2;\overline{#3}\right] $}
@@ -221,22 +224,16 @@
 %----------------------------------------------------------------------------------------
 %	TITLE PAGE 标题页
 %----------------------------------------------------------------------------------------
-
-\title[开题答辩]{Bernoulli卷积的性质 \\ \small{毕业设计开题答辩}} % The short title appears at the bottom of every slide, the full title is only on the title page
-
-\author{冯洲} % Your name
-\institute[HUST] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
-{
-华中科技大学 \\ % Your institution for the title page
-\medskip
-\textit{U201510104@hust.edu.cn} % Your email address
-}
-\date{\today} % Date, can be changed to a custom date
+\title[开题答辩]{标题} % The short title appears at the bottom of every slide, the full title is only on the title page
+\subtitle{副标题}
+\author{姓名}
+\institute[HUST]{华中科技大学}
+\date{\today}
 
 \begin{document}
 
 \begin{frame}
-	\titlepage % Print the title page as the first slide
+	\titlepage % print the title page
 \end{frame}
 
 
@@ -278,8 +275,6 @@
 		如果$ \nu_{\beta} $奇异，那么是否一定有$ \beta $为Pisot数?
 	\end{block}
 \end{frame}
-
-
 
 
 %------------------------------------------------
