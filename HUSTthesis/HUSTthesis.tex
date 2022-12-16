@@ -46,17 +46,17 @@
 \usepackage{ctex}		 	% If you are lazy, the CTEX suit is enough.
 % Chinese font
 \usepackage{xeCJK}		 	% For the Chinese through XeLaTex
-\setCJKmainfont{SimSun} 	% set the mainfont of Chinese as songti. (serif) for
-\setCJKsansfont{SimSun} 	% sans serif font for \textsf
-\setCJKmonofont{SimSun} 	% monospace font for \texttt
-% \punctstyle{kaiming}  	% Remove the space used by symbols like comma. Special for the mainland students like us HUSTers.
-\setCJKfamilyfont{song}{SimSun}                       % 宋体 song
-\newcommand{\song}{\CJKfamily{song}}
-\setCJKfamilyfont{kai}{KaiTi}                         % 楷体  kai
-\newcommand{\kai}{\CJKfamily{kai}}
-\setCJKfamilyfont{hwzs}{STZhongsong}                  % 华文中宋  hwzs
+\setCJKmainfont{FandolSong} 	% set the mainfont of Chinese as songti. (serif) for  
+\setCJKsansfont{FandolSong}	% sans serif font for \textsf
+\setCJKmonofont{FandolSong}	% monospace font for \texttt
+% \punctstyle{kaiming}   	% Remove the space used by symbols like comma. Special for the mainland students like us HUSTers.
+\setCJKfamilyfont{song}{FandolSong}                     %宋体 song
+\newcommand{\song}{\CJKfamily{song}}                        
+\setCJKfamilyfont{kai}{FandolKai}                        		 %楷体2312  kai
+\newcommand{\kai}{\CJKfamily{kai}}  
+\setCJKfamilyfont{hwzs}{FandolFang}                        %华文中宋  hwzs
 \newcommand{\hwzs}{\CJKfamily{hwzs}}
-\setCJKfamilyfont{hei}{SimHei}                        % 黑体  hei
+\setCJKfamilyfont{hei}{FandolHei}                     %黑体  hei
 \newcommand{\hei}{\CJKfamily{hei}}
 % English font
 \usepackage{fontspec}% Then you can use the fonts installed at your device.
@@ -393,7 +393,7 @@
 % ------------------------------------ 标题页 ----------------------------------- %
 \title{毕业论文题目} % 论文题目
 \def\school{数学与统计学院} % 院系
-\def\classnum{应数拔尖1501班} % 专业班级
+\def\classnum{专业班级} % 专业班级
 \author{学生姓名} % 姓名
 \def\stunum{U201512345}	% 学号
 \def\instructor{导师姓名} % 指导老师
